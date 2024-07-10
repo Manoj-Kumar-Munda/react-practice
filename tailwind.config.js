@@ -3,6 +3,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          "100%": {
+            transform: "translateX(calc(-50% - 1rem))",
+          },
+        },
+      },
+      animation: {
+        scroll: "scroll 15s linear infinite",
+      },
       translate: {
         "full-0": "0",
         "full-1": "100%",

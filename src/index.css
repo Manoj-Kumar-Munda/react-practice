@@ -193,3 +193,26 @@ body {
     rgba(38, 38, 38, 0.24) 100%
   );
 }
+
+
+/* scroller */
+@keyframes scroll{
+  0%{ transform: translateX(0);}
+  100%{ transform: translateX(-50%);}
+}
+
+.scroller{
+  
+  mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+}
+
+/* .scroller ul{
+   display: flex;
+   gap: 1rem;
+   width: max-content;
+   animation: scroll 40s linear infinite forwards;
+} */
+
+/* .scroller .ul.paused{
+  animation-play-state: paused;
+} */
